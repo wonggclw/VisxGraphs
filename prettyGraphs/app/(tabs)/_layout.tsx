@@ -28,6 +28,12 @@ export default function TabLayout() {
           <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
         ),
       }} />
+      <Tabs.Screen name="graph" options={{
+        title: 'Graph',
+        tabBarIcon: ({ color, focused }) => (
+          <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
+        ),
+      }} />
     </Tabs>
   );
 }
